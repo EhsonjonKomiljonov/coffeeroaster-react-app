@@ -1,0 +1,265 @@
+.coffee {
+  padding-bottom: 168px;
+}
+
+.coffee__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.coffee__list {
+  width: 100%;
+  max-width: 255px;
+}
+
+.coffee__item {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.coffee__item:not(:last-child) {
+  border-bottom: 1px solid #83888f40;
+}
+
+.coffee__item__numbers {
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.coffee__item:nth-child(1) > .coffee__item__numbers {
+  color: #0e8784;
+}
+
+.coffee__item:nth-child(1) > .coffee__item__descs {
+  color: #333d4b;
+}
+
+.coffee__item__descs {
+  margin-left: 25px;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+  transition: all 0.2s ease;
+}
+
+.coffee__item__descs:hover {
+  color: #333d4b;
+  opacity: 0.8;
+}
+
+.coffee__details {
+  position: relative;
+  width: 100%;
+  max-width: 730px;
+}
+
+.coffee__details:not(:last-child) {
+  margin-bottom: 88px;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.coffee__active__box {
+  margin-top: 56px;
+}
+
+.coffee__title {
+  margin: 0;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888f;
+}
+
+.coffee__title__arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/images/coffee-arrow.svg');
+  background-size: 18px 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+
+.coffee__active__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__hidden {
+  display: none;
+}
+
+.card__hidden:checked ~ .card__box {
+  background-color: #0e8784;
+}
+
+.card__hidden:checked ~ .card__box > .card__title {
+  color: #fff;
+}
+
+.card__hidden:checked ~ .card__box > .card__text {
+  color: #fff;
+}
+
+.card__box {
+  width: 100%;
+  max-width: 228px;
+  padding: 32px 25px 84px;
+  background: #f4f1eb;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card__box:hover {
+  background-color: #fdd6ba;
+}
+
+.card__title {
+  margin: 0 0 24px;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.card__text {
+  margin: 0;
+  font-family: 'Barlow';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+.order {
+  padding: 47px 64px;
+  background-color: #283038;
+  border-radius: 10px;
+}
+
+.order__title {
+  margin: 0;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff80;
+}
+
+.order__text__box {
+  width: 100%;
+  max-width: 602px;
+  margin-top: 8px;
+}
+
+.order__text {
+  margin: 0;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.order__style {
+  color: #0e8784;
+}
+
+.coffee__btn {
+  display: block;
+  margin-left: auto;
+  margin-top: 40px;
+  padding: 15px 35px;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: #0e8784;
+  color: #fefcf7;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.coffee__btn:hover {
+  background-color: #66d2cf;
+}
+
+@media only screen and (max-width: 1025px) {
+  .coffee__list {
+    display: none;
+  }
+
+  .coffee__inner {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  .coffee__title__arrow {
+    margin-left: 45px;
+  }
+
+  .coffee__btn {
+    margin: 40px auto 0;
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  .card__box {
+    padding: 30px 22px 60px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .coffee__active__box {
+    flex-direction: column;
+  }
+
+  .card__box {
+    width: 100%;
+    max-width: 340px;
+    padding: 25px 24px;
+  }
+
+  .card + .card {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .coffee__title {
+    justify-content: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .coffee__title__arrow {
+    margin-left: 10px;
+  }
+}

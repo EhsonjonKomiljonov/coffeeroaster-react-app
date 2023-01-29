@@ -1,0 +1,143 @@
+.collection {
+  padding: 136px 0 200px;
+}
+
+.collection__inner {
+  width: 100%;
+  max-width: 1111px;
+  margin: 0 auto;
+  background-image: url('../../assets/images/collection-bgi.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.collection__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 126px;
+}
+
+.collection__content {
+  width: 100%;
+  max-width: 255px;
+  margin: 72px auto 0;
+}
+
+.collection__subtitle {
+  margin: 0 0 24px;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333d4b;
+}
+
+.collection__text {
+  margin: 0;
+  font-family: 'Barlow';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333d4b;
+}
+
+@media only screen and (max-width: 1000px) {
+  .collection__list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 59px;
+  }
+
+  .collection__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .collection__content {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .collection {
+    padding-top: 100px;
+  }
+
+  .collection__content {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .collection__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collection__inner {
+    width: 100%;
+    max-width: 689px;
+    background-image: url('../../assets/images/collection-bgi-tablet.png');
+    background-size: 100% auto;
+  }
+
+  .collection__list {
+    flex-direction: column;
+    padding-top: 59px;
+  }
+
+  .collection__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .collection__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .collection__content {
+    margin-top: 0;
+  }
+
+  .collection__subtitle {
+    text-align: left;
+  }
+
+  .collection__text {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .collection {
+    padding: 120px 0 120px;
+  }
+
+  .collection__inner {
+    background-image: url('../../assets/images/collection-bgi-mobile.png');
+  }
+
+  .collection__item {
+    flex-direction: column;
+  }
+
+  .collection__content {
+    width: 100%;
+    max-width: 282px;
+    margin: 24px auto 0;
+  }
+
+  .collection__subtitle {
+    text-align: center;
+  }
+
+  .collection__text {
+    text-align: center;
+  }
+}

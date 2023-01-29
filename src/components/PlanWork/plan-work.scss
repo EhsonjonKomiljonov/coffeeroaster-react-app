@@ -1,0 +1,57 @@
+.work--plan {
+  padding-bottom: 168px;
+}
+
+.work__inner--plan {
+  padding: 100px 150px 100px 85px;
+  background-image: url('../../assets/images/work-plan-bgi.png');
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 10px;
+}
+
+.work__style {
+  margin-left: 15px;
+}
+
+.work__style__inners:nth-child(1) {
+  left: -15px;
+}
+
+.work__style__inners:nth-child(3) {
+  right: -15px;
+}
+
+.work__style__inners--plan {
+  background-color: transparent;
+}
+
+.work__list--plan {
+  margin-bottom: 0;
+}
+
+.work__descs--plan {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1190px) {
+  .work__inner--plan {
+    padding: 97px 40px 70px 40px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .work__inner--plan {
+    padding: 97px 30px 70px;
+  }
+
+  .work__item {
+    width: 100%;
+    max-width: 210px;
+  }
+
+  .work__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

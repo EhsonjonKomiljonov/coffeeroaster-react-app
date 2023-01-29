@@ -1,0 +1,160 @@
+.commit {
+  padding-bottom: 256px;
+}
+
+.commit__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.commit__content {
+  width: 100%;
+  max-width: 540px;
+}
+
+.commit__title {
+  margin: 0 0 32px;
+  font-family: 'Fraunces 9pt';
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333d4b;
+}
+
+.commit__text {
+  margin: 0;
+  font-family: 'Barlow';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4bcc;
+}
+
+@media only screen and (max-width: 1100px) {
+  .commit {
+    margin-bottom: 313px;
+    padding-bottom: 0;
+  }
+
+  .commit__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .commit__content {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .commit__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .commit-img {
+    width: 100%;
+    max-width: 281px;
+    height: 470px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .commit__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .commit__content {
+    width: 100%;
+    max-width: 339px;
+  }
+
+  .commit__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .commit__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .commit__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .commit__content {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 48px;
+  }
+
+  .commit__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .commit__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .commit {
+    padding-bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .commit__content {
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .commit__title {
+    text-align: center;
+  }
+
+  .commit__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .commit {
+    padding-bottom: 120px;
+  }
+
+  .commit-img {
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .commit__title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
